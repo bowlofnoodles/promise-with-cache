@@ -11,7 +11,7 @@ const callbackMap = new Map<string, RequestCallback[]>();
 const statusMap = new Map<string, 'pending' | 'complete'>();
 
 // 实际数据缓存
-const cacheMap = new Map<string, Record<string, any>>();
+const cacheMap = new Map<string, any>();
 
 class CachePromise<T = any> {
   private promiseFunc: () => Promise<T>;

@@ -15,7 +15,7 @@
     "build": "tsdx build",
     "test": "tsdx test",
     "lint": "tsdx lint",
-    "prepare": "tsdx build",
+    "prepare": "tsdx build && npx standard-version -- --release-as",
     "size": "size-limit",
     "analyze": "size-limit --why"
   },
@@ -48,6 +48,7 @@
     "@size-limit/preset-small-lib": "^8.2.4",
     "husky": "^8.0.3",
     "size-limit": "^8.2.4",
+    "standard-version": "^9.5.0",
     "tsdx": "^0.14.1",
     "tslib": "^2.5.3",
     "typescript": "^5.1.3"
